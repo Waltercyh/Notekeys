@@ -6,4 +6,4 @@
 
 
 ## 哈希
-1.同构字符串：[](https://leetcode-cn.com/problems/isomorphic-strings/)
+1.[同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/)

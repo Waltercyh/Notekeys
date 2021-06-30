@@ -13,3 +13,7 @@
 
 ## 哈希
 1. [同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/):构建两个哈希表，将已配对的部分存入，后续check当前出现的字符是否已配对，未配对则加入，已配对则判断是否符合。
+
+## 用一个随机函数生成另一个:
+1.[leetcode470](https://leetcode-cn.com/problems/implement-rand10-using-rand7/submissions/)
+通过多次运行给定的随机函数生成足够多的均匀样本,从中以新随机函数的尺度划分.例如,通过两次rand7可以生成1到49(记住不是简单相乘,这样不是均匀的, 是(a-1)*scale1 + b).然后从中截取.多的可以扔掉,重新运行,也可以用于下次随机数生成.

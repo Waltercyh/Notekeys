@@ -10,6 +10,9 @@
 [[0]*(len2+1) for _ in range(len1+1)] #应该像这样建立dp数组
 ~~~
 
+## 链表
+1. [回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/): 关键在于想要时间复杂度O(n),空间复杂度O(1).所以需要在原链表上进行操作.所有回文都可以转化为倒序是否相同.于是转化为反转后半链表,看前后是否相同.定位后半链表可以使用快慢指针.
+
 
 ## 哈希
 1. [同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/):构建两个哈希表，将已配对的部分存入，后续check当前出现的字符是否已配对，未配对则加入，已配对则判断是否符合。

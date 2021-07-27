@@ -20,3 +20,6 @@
 ## 用一个随机函数生成另一个:
 1.[leetcode470](https://leetcode-cn.com/problems/implement-rand10-using-rand7/submissions/)
 通过多次运行给定的随机函数生成足够多的均匀样本,从中以新随机函数的尺度划分.例如,通过两次rand7可以生成1到49(记住不是简单相乘,这样不是均匀的, 是(a-1)*scale1 + b).然后从中截取.多的可以扔掉,重新运行,也可以用于下次随机数生成.
+
+## 单调栈
+1. [柱形图最大面积](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/): 需要判断每个高度点上左侧比它小的位置,需要一个栈存位置, 且满足坐标和高度递增.重点在于,i位置入栈前,栈内比height[i]高的都可以pop,因为它们不再可能成为i右侧的选项(height[i]更小).

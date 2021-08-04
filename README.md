@@ -24,3 +24,7 @@
 
 ## 单调栈
 1. [柱形图最大面积](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/): 需要判断每个高度点上左侧比它小的位置,需要一个栈存位置, 且满足坐标和高度递增.重点在于,i位置入栈前,栈内比height[i]高的都可以pop,因为它们不再可能成为i右侧的选项(height[i]更小).
+
+
+## 回溯/遍历/组合
+1. [组合数](https://leetcode-cn.com/problems/combination-sum-iii/submissions/) 组合可以看作dfs.

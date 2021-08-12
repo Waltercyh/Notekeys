@@ -28,3 +28,7 @@
 
 ## 回溯/遍历/组合
 1. [组合数](https://leetcode-cn.com/problems/combination-sum-iii/submissions/) 组合可以看作dfs.
+
+## 数组两边偏序的转化
+1. [发糖](https://leetcode-cn.com/problems/candy/submissions/)  要求比两边高,可以从左到右和从右到左各遍历一次,先分立地求出解,再求max.这样就将两边的偏序分拆成了两个子问题.
+

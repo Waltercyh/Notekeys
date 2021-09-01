@@ -32,3 +32,6 @@
 ## 数组两边偏序的转化
 1. [发糖](https://leetcode-cn.com/problems/candy/submissions/)  要求比两边高,可以从左到右和从右到左各遍历一次,先分立地求出解,再求max.这样就将两边的偏序分拆成了两个子问题.
 
+## 状态机
+1. [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/): 这种有多个情况, 且每个情况之间转换固定, 可以建模成状态机, 简洁明了.
+

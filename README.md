@@ -17,6 +17,8 @@
 
 ## 哈希
 1. [同构字符串](https://leetcode-cn.com/problems/isomorphic-strings/):构建两个哈希表，将已配对的部分存入，后续check当前出现的字符是否已配对，未配对则加入，已配对则判断是否符合。
+2. [两数之和](https://leetcode.cn/problems/two-sum/)：重点是在list中查询已知值的复杂度为O(n)，通过hashtable降低为O(1)，并且通过hashtable存放从值到index的映射。
+3. [字母异位词分组](https://leetcode.cn/problems/group-anagrams/description/?envType=study-plan-v2&envId=top-100-liked): 两个不一样的对象但具有同样的特征，第一反应通过哈希表建立映射，降低复杂度，如何对这个特征建模则是需要注意的。dict是一种很好的存放特征到对象的映射的数据结构。
 
 ## 用一个随机函数生成另一个:
 1.[leetcode470](https://leetcode-cn.com/problems/implement-rand10-using-rand7/submissions/)

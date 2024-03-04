@@ -27,13 +27,20 @@
 
 ## 单调栈
 1. [柱形图最大面积](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/): 需要判断每个高度点上左侧比它小的位置,需要一个栈存位置, 且满足坐标和高度递增.重点在于,i位置入栈前,栈内比height[i]高的都可以pop,因为它们不再可能成为i右侧的选项(height[i]更小).
+2. 
 
 
 ## 回溯/遍历/组合
 1. [组合数](https://leetcode-cn.com/problems/combination-sum-iii/submissions/) 组合可以看作dfs.
 
+
+## 二叉树
+1. [路径总和](https://leetcode.cn/problems/path-sum-iii/submissions/507317100/?envType=study-plan-v2&envId=top-100-liked) 前缀和本身不难想，关键是在求前缀和的过程中把之前节点的和存下来，并查找，记住查找优先考虑hashmap(dict).
+
+
 ## 数组两边偏序的转化
 1. [发糖](https://leetcode-cn.com/problems/candy/submissions/)  要求比两边高,可以从左到右和从右到左各遍历一次,先分立地求出解,再求max.这样就将两边的偏序分拆成了两个子问题.
+
 
 ## 状态机
 1. [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/): 这种有多个情况, 且每个情况之间转换固定, 可以建模成状态机, 简洁明了.

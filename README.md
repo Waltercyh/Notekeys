@@ -32,6 +32,7 @@
 
 ## 回溯/遍历/组合
 1. [组合数](https://leetcode-cn.com/problems/combination-sum-iii/submissions/) 组合可以看作dfs.
+2. [单词搜索](https://leetcode.cn/problems/word-search/description/?envType=study-plan-v2&envId=top-100-liked) 注意这题和腐烂的橘子那一题的区别。这题是搜索一个单词，代表一条路径，路径的题不可用广度搜索，因为广度搜索时同层同时遍历，就没有路径的概念了，无法规定同层的另一个元素的时序，而应该用回溯（类似于dfs）。而腐烂的橘子本身是传播，橘子间没有差异，故同层搜索没有问题，可以用bfs。
 
 
 ## 二叉树

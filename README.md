@@ -46,3 +46,5 @@
 ## 状态机
 1. [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/): 这种有多个情况, 且每个情况之间转换固定, 可以建模成状态机, 简洁明了.
 
+## 贪心算法
+1. [跳跃游戏II](https://leetcode.cn/problems/jump-game-ii/solutions/230241/tiao-yue-you-xi-ii-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：每次记录当前可达位置的最大可达位置，作为下次可达的最远位置。比较巧妙的是，不需要记录最大可达位置的起始位置，因为最大可达位置是当前可达位置共用的，所以只要到当前可达的位置最大值就加1，而当前可达位置的最大值就是上一步的最大可达位置，因此走到最大可达位置后更新下一步的最大位置为当前最大可达位置，然后step+1就行。

@@ -48,3 +48,6 @@
 
 ## 贪心算法
 1. [跳跃游戏II](https://leetcode.cn/problems/jump-game-ii/solutions/230241/tiao-yue-you-xi-ii-by-leetcode-solution/?envType=study-plan-v2&envId=top-100-liked)：每次记录当前可达位置的最大可达位置，作为下次可达的最远位置。比较巧妙的是，不需要记录最大可达位置的起始位置，因为最大可达位置是当前可达位置共用的，所以只要到当前可达的位置最大值就加1，而当前可达位置的最大值就是上一步的最大可达位置，因此走到最大可达位置后更新下一步的最大位置为当前最大可达位置，然后step+1就行。
+
+## 连续路径/子数组的和
+1.[和为k的子数组](https://leetcode.cn/problems/subarray-sum-equals-k/description/?envType=study-plan-v2&envId=top-100-liked) 这类问题都有统一的解法。直接找连续路径复杂度很高，但是连续路径可以看做顶点到两个端点的差。如果是树就是根节点到当前的路径，如果是数组就是索引为0的。因此可以在遍历的时候进行计算，同时存到dict里，然后每次判断当前sum-target在不在表里就知道了。
